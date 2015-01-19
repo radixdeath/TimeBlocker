@@ -54,5 +54,24 @@
 				</ul>
 			</li>
 		</ul>
+		<ul class="nav navbar-nav navbar-right" data-ng-show="authentication.user">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					TimeBlocks<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="/#!/timeblocks">Your TimeBlocks</a>
+					</li>
+					<li>
+						<a href="/#!/timeblocks/create">Add a TimeBlock</a>
+					</li>
+					<li>
+						<a href="/#!/timeblocks/edit">Delete a TimeBlock</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
 	</nav>
 </div>

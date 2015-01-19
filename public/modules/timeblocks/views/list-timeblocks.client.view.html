@@ -1,0 +1,19 @@
+<section data-ng-controller="TimeblocksController" data-ng-init="find()">
+    <div class="page-header">
+        <h1>Timeblocks</h1>
+    </div>
+    <div class="list-group">
+        <a data-ng-repeat="timeblock in timeblocks" data-ng-href="#!/timeblocks/{{timeblock._id}}" class="list-group-item">
+			<small class="list-group-item-text">
+				Posted on
+				<span data-ng-bind="timeblock.created | date:'medium'"></span>
+				by
+				<span data-ng-bind="timeblock.user.displayName"></span>
+			</small>
+			<h4 class="list-group-item-heading" data-ng-bind="timeblock.name"></h4>
+        </a>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-hide="!timeblocks.$resolved || timeblocks.length">
+    	No Timeblocks yet, why don't you <a href="/#!/timeblocks/create">create one</a>?
+    </div>
+</section>
