@@ -10,16 +10,19 @@ var mongoose = require('mongoose'),
  * Timeblock Schema
  */
 var TimeblockSchema = new Schema({
-	name: {
-		type: String,
-		default: '',
-		required: 'Please fill Timeblock name',
-		trim: true
+	// You can create TimeBlocks and start and end them at any time
+	creationDateTime: {
+		type: Date
 	},
-	created: {
-		type: Date,
-		default: Date.now
+	startDateTime: {
+		type: Date
 	},
+	endDateTime: {
+		type: Date
+	},
+    invoiceId: {
+        type: String
+    },
 	user: {
 		type: Schema.ObjectId,
 		ref: 'User'
