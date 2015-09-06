@@ -31,6 +31,13 @@ module.exports = {
 		clientSecret: process.env.GITHUB_SECRET || 'APP_SECRET',
 		callbackURL: '/auth/github/callback'
 	},
+	evernote: {
+		consumerKey: process.env.EVERNOTE_ID || 'stewartdunlopuk',
+		consumerSecret: process.env.EVERNOTE_SECRET || '0648121c5efd7f9c',
+//		callbackURL: 'http://127.0.0.1:3000/auth/evernote/callback'
+		callbackURL: '/auth/evernote/callback'
+		//callbackURL: 'http://127.0.0.1:3000/create-timeblock'
+	},
 	mailer: {
 		from: process.env.MAILER_FROM || 'MAILER_FROM',
 		options: {

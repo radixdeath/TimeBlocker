@@ -1,0 +1,19 @@
+<section data-ng-controller="TimeblocksController">
+    <div class="col-sm-8">
+        <div class="panel panel-default" style="height:100%;">
+            <div class="panel-heading" style="padding:3px;">
+
+                <div ng-show="timelineLoaded">
+                    <h6>{{timelineTimeline}}</h6>
+                </div>
+            </div>
+
+            <div class="panel-body" style="height:400px;padding:3px;">
+                <vis-timeline ng-show="timelineLoaded" data="timelineData" options="timelineOptions"
+                              events="graphEvents"></vis-timeline>
+            </div>
+        </div>
+    </div>
+
+
+</section>

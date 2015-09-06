@@ -15,6 +15,8 @@ module.exports = {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+                'public/lib/angucomplete-alt/angucomplete-alt.css',
+				'public/lib/vis/dist/vis.css'
 			],
 			js: [
 				'public/lib/angular/angular.js',
@@ -26,7 +28,13 @@ module.exports = {
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
-				'public/lib/angular-translate/angular-translate.js'
+				'public/lib/angular-translate/angular-translate.js',
+                'public/lib/angucomplete-alt/angucomplete-alt.js',
+                'public/lib/angular-strap/dist/angular-strap.min.js',
+				'public/lib/angular-strap/dist/angular-strap.tpl.min.js',
+				'public/lib/vis/dist/vis.js',
+                'public/lib/angular-visjs/angular-vis.js',
+                'public/lib/moment/moment.js'
 			]
 		},
 		css: [

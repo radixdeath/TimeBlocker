@@ -3,17 +3,20 @@
 	"version": "0.0.1",
 	"description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js",
 	"dependencies": {
-		"bootstrap": "~3",
-		"angular": "~1.2",
-		"angular-resource": "~1.2",
-		"angular-mocks": "~1.2",
-		"angular-cookies": "~1.2",
-		"angular-animate": "~1.2",
-		"angular-touch": "~1.2",
-		"angular-sanitize": "~1.2",
-		"angular-bootstrap": "~0.11.2",
-		"angular-ui-utils": "~0.1.1",
-		"angular-ui-router": "~0.2.11",
-	    "angular-translate": "~2.5.0"
+	  "bootstrap": "~3",
+	  "angular": "~1.2",
+	  "angular-resource": "~1.2",
+	  "angular-mocks": "~1.2",
+	  "angular-cookies": "~1.2",
+	  "angular-animate": "~1.2",
+	  "angular-touch": "~1.2",
+	  "angular-sanitize": "~1.2",
+	  "angular-bootstrap": "~0.11.2",
+	  "angular-ui-utils": "~0.1.1",
+	  "angular-ui-router": "~0.2.11",
+	  "angular-translate": "~2.5.0",
+	  "angucomplete-alt": "",
+	  "angular-strap": "~2.1.6",
+	  "angular-visjs": "0.0.2"
 	}
 }

@@ -6,13 +6,23 @@
         <form class="form-horizontal" data-ng-submit="create()" novalidate>
             <fieldset>
                 <div class="form-group">
-                    <label class="control-label" for="name">Name</label>
-                    <div class="controls">
-                        <input type="text" data-ng-model="name" id="name" class="form-control" placeholder="Name" required>
+                    <div class="col-md-1 lowpadding">
+                        <label class="control-label">Category</label>
+                        <div class="controls">
+                            <angucomplete-alt id="category"
+                                              pause="100"
+                                              selected-object="selectedCategory"
+                                              initial-value="{{selectedCategory.name}}"
+                                              local-data="categories"
+                                              search-fields="name"
+                                              title-field="name"
+                                              minlength="1"
+                                              input-class="form-control form-control-small"/>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-default">
+                    <input type="submit" class="btn btn-default" value="Add">
                 </div>
 				<div data-ng-show="error" class="text-danger">
 					<strong data-ng-bind="error"></strong>
@@ -21,3 +31,19 @@
         </form>
     </div>
 </section>
+
+<!--
+Category:  main category - (work/life/?)
+SubCategory:  sub category - will determine charge per hour and adjustment for work - impacts? if life
+DateTime:  start time - optional, if not set will be set from position on timeline
+DateTime:  end time/duration - will determine block size
+Number:  ?padding - inside block/outside bloc/both? - minutes
+Repeat:  repeat - optional - daily/weekly/workdays/monthly
+Number:  work?charge per hour - see sub category - can be overridden - what you're planning on charging
+Number:  work?cost - ie expenses - how much did the room hire/coffee cost you
+Number:  work?actual amount charged - will be auto generated from charge per hour, but can be overridden
+Number:  work?actual balance - ie actual amount charged minus any costs
+ImpactCategory:  ?impact category - health/finance/relationships/business
+Number:  ?impact effect +- number 1-10?
+String:  ?notes
+-->

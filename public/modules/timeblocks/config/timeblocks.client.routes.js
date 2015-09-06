@@ -11,7 +11,13 @@ angular.module('timeblocks').config(['$stateProvider',
 		}).
 		state('createTimeblock', {
 			url: '/timeblocks/create',
+			css: '/timeblocks/timeblocs.css',
 			templateUrl: 'modules/timeblocks/views/create-timeblock.client.view.html'
+		}).
+		state('day', {
+			url: '/day',
+			css: '/timeblocks/timeblocs.css',
+			templateUrl: 'modules/timeblocks/views/day.client.view.html'
 		}).
 		state('viewTimeblock', {
 			url: '/timeblocks/:timeblockId',

@@ -3,14 +3,10 @@
         <h1>Timeblocks</h1>
     </div>
     <div class="list-group">
-        <a data-ng-repeat="timeblock in timeblocks" data-ng-href="#!/timeblocks/{{timeblock._id}}" class="list-group-item">
-			<small class="list-group-item-text">
-				Posted on
-				<span data-ng-bind="timeblock.created | date:'medium'"></span>
-				by
-				<span data-ng-bind="timeblock.user.displayName"></span>
-			</small>
-			<h4 class="list-group-item-heading" data-ng-bind="timeblock.name"></h4>
+        <a data-ng-repeat="timeblock in timeblocks" data-ng-href="#!/timeblocks/{{timeblock._id}}">
+            <div class="col-md-4">
+                <span ng-style="getLifeStyle(timeblock)" class="form-control form-control-small">{{timeblock.category}}</span>
+			</div>
         </a>
     </div>
     <div class="alert alert-warning text-center" data-ng-hide="!timeblocks.$resolved || timeblocks.length">
