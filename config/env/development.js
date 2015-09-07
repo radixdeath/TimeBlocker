@@ -31,8 +31,8 @@ module.exports = {
 		callbackURL: '/auth/github/callback'
 	},
 	evernote: {
-		consumerKey: process.env.EVERNOTE_ID || 'stewartdunlopuk',
-		consumerSecret: process.env.EVERNOTE_SECRET || '0648121c5efd7f9c',
+		consumerKey: process.env.EVERNOTE_ID || 'APP-ID',
+		consumerSecret: process.env.EVERNOTE_SECRET || 'APP-SECRET',
 		callbackURL: '/auth/evernote/callback'
 	},
 	mailer: {
