@@ -8,5 +8,9 @@ angular.module('timeblocks').run(['Menus',
 		Menus.addSubMenuItem('topbar', 'timeblocks', 'Day', 'day');
 		Menus.addSubMenuItem('topbar', 'timeblocks', 'List Timeblocks', 'timeblocks');
 		Menus.addSubMenuItem('topbar', 'timeblocks', 'New Timeblock', 'timeblocks/create');
+
+		Menus.addMenuItem('topbar', 'Calendars', 'calendars', 'dropdown', '/calendars');
+		Menus.addSubMenuItem('topbar', 'calendars', 'Calendars', 'calendars');
+
 	}
 ]);
